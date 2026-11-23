@@ -1,0 +1,592 @@
+{
+  "gerado_em_utc": "2026-11-22T07:54:05.515877+00:00",
+  "estudo": "EXP-SEG-01",
+  "m3": {
+    "T1": {
+      "n": 2,
+      "N": 2,
+      "fracao": "2/2",
+      "percentual": 100.0,
+      "conforme": [
+        "EST-E006",
+        "EST-E012"
+      ],
+      "desvio_confirmado": [],
+      "inconclusiva": [],
+      "nao_executada": []
+    },
+    "T2": {
+      "n": 22,
+      "N": 24,
+      "fracao": "22/24",
+      "percentual": 91.7,
+      "conforme": [
+        "AUT-E003",
+        "AUT-E004",
+        "AUT-E005",
+        "AUT-E008",
+        "AUT-E009",
+        "AUT-E010",
+        "AUT-E011",
+        "AUT-E012",
+        "AUT-E014",
+        "AUT-E015",
+        "AUT-E028",
+        "AUT-E031",
+        "AUT-E032",
+        "AUT-E033",
+        "AUT-E034",
+        "AUT-E035",
+        "AUT-E036",
+        "AUT-E037",
+        "AUT-E038",
+        "AUT-E039",
+        "CACHE-E003",
+        "CACHE-E015"
+      ],
+      "desvio_confirmado": [],
+      "inconclusiva": [
+        "AUT-E013",
+        "AUT-E026"
+      ],
+      "nao_executada": []
+    },
+    "T3": {
+      "n": 46,
+      "N": 52,
+      "fracao": "46/52",
+      "percentual": 88.5,
+      "conforme": [
+        "I01",
+        "I03",
+        "I04",
+        "I05",
+        "I08",
+        "I09",
+        "I10",
+        "I13",
+        "I14",
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "AUT-E003",
+        "AUT-E004",
+        "AUT-E005",
+        "AUT-E008",
+        "AUT-E009",
+        "AUT-E010",
+        "AUT-E011",
+        "AUT-E012",
+        "AUT-E014",
+        "AUT-E015",
+        "AUT-E026",
+        "AUT-E028",
+        "AUT-E031",
+        "AUT-E032",
+        "AUT-E033",
+        "AUT-E034",
+        "AUT-E035",
+        "AUT-E036",
+        "AUT-E037",
+        "AUT-E038",
+        "AUT-E039",
+        "CACHE-E003",
+        "CACHE-E015"
+      ],
+      "desvio_confirmado": [],
+      "inconclusiva": [
+        "I02",
+        "I06",
+        "I07",
+        "I11",
+        "I12",
+        "AUT-E013"
+      ],
+      "nao_executada": []
+    }
+  },
+  "m1_desvios_unidades": {
+    "T1": [],
+    "T2": [],
+    "T3": [],
+    "total_unidades_com_desvio": 0
+  },
+  "m2_intersecao_t2_t3": {
+    "planejadas_em_comum": 24,
+    "efetivamente_comparaveis": 22,
+    "unidades_comparaveis": [
+      "AUT-E003",
+      "AUT-E004",
+      "AUT-E005",
+      "AUT-E008",
+      "AUT-E009",
+      "AUT-E010",
+      "AUT-E011",
+      "AUT-E012",
+      "AUT-E014",
+      "AUT-E015",
+      "AUT-E028",
+      "AUT-E031",
+      "AUT-E032",
+      "AUT-E033",
+      "AUT-E034",
+      "AUT-E035",
+      "AUT-E036",
+      "AUT-E037",
+      "AUT-E038",
+      "AUT-E039",
+      "CACHE-E003",
+      "CACHE-E015"
+    ]
+  },
+  "observacoes_adicionais_fora_denominador": [
+    "T2A (AUT-E028): observada(s) 2 resposta(s) HTTP 500 no HAR (results/t2a-e028.har).",
+    "T2B-ZAP alerta [90004] Low (Medium): Cross-Origin-Resource-Policy Header Missing or Invalid (x2).",
+    "T2B-ZAP alerta [10021] Low (Medium): X-Content-Type-Options Header Missing (x2)."
+  ],
+  "matriz_54": [
+    {
+      "unidade": "I01",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Login local distinguiu sessão completa (B sem 2FA -> /me 200) de desafio 2FA (A com 2FA -> token de desafio rejeitado em /me com 401/403 e acesso completo concedido somente após verificação)."
+    },
+    {
+      "unidade": "I02",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "inconclusiva",
+      "detalhe_T2": null,
+      "detalhe_T3": "Token Google inválido foi rejeitado (HTTP 401), mas não há credencial Google OAuth de teste assinada e vinculada a uma conta experimental para validar o fluxo positivo."
+    },
+    {
+      "unidade": "I03",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "GET /api/auth/me retornou as identidades corretas de A e V1 com campos dentro de IdentityResponse e referências aninhadas restritas apenas a {'id'}."
+    },
+    {
+      "unidade": "I04",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Logout de A retornou HTTP 200 e registrou evento de auditoria associado a user_id=12 em activity_logs (política local não exige revogação imediata do JWT)."
+    },
+    {
+      "unidade": "I05",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Mudança de senha de A invalidou a senha anterior, autenticou com a nova senha e preservou integralmente o acesso de B (senha original de A restaurada ao final)."
+    },
+    {
+      "unidade": "I06",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "inconclusiva",
+      "detalhe_T2": null,
+      "detalhe_T3": "Respostas públicas idênticas (HTTP 200) e registro criado em password_reset_tokens para A (0->1), porém a entrega na caixa de teste não pôde ser conferida (dependência externa SMTP em example.com)."
+    },
+    {
+      "unidade": "I07",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "inconclusiva",
+      "detalhe_T2": null,
+      "detalhe_T3": "Token inválido foi rejeitado (HTTP 401), mas o controle positivo de consumo do token não pôde ser executado porque o banco persiste apenas token_hash e não há caixa SMTP recebível para recuperar o token em texto puro."
+    },
+    {
+      "unidade": "I08",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Transição E008+E009 validada: 2FA permaneceu inativo antes da confirmação e tornou-se ativo (method='google') somente após confirmação TOTP válida."
+    },
+    {
+      "unidade": "I09",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Verificação Google rejeitou código inválido e concluiu sessão completa da conta A com TOTP válido."
+    },
+    {
+      "unidade": "I10",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Ativação por A habilitou 2FA com método 'email' apenas na própria conta, preservando B."
+    },
+    {
+      "unidade": "I11",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "inconclusiva",
+      "detalhe_T2": null,
+      "detalhe_T3": "Operação retornou HTTP 200 e persistiu hash do OTP (len=64) com expiração no banco, mas a entrega efetiva ao destinatário na caixa de teste não pôde ser conferida (dependência externa SMTP com domínio sintético example.com)."
+    },
+    {
+      "unidade": "I12",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "inconclusiva",
+      "detalhe_T2": null,
+      "detalhe_T3": "Código fictício foi rejeitado (HTTP 401), mas o controle positivo não pôde ser executado porque o OTP é armazenado como hash (len=64) e o ambiente não dispõe de caixa SMTP recebível para example.com."
+    },
+    {
+      "unidade": "I13",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Desativação persistiu two_factor_enabled=False no banco e o login seguinte retornou sessão completa direta."
+    },
+    {
+      "unidade": "I14",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "GET /api/2fa/status retornou apenas os campos de User2FASchema sem segredo ou código."
+    },
+    {
+      "unidade": "P01",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "V1 criou produto vinculado a sellers.id=7 (distinto de users.id=14); Cliente A e vínculo indevido à loja de V2 foram impedidos."
+    },
+    {
+      "unidade": "P02",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Catálogo público retornou P1 e P2 com todos os campos dentro de ProductResponse e ProductSellerOut."
+    },
+    {
+      "unidade": "P03",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Consulta de V1 incluiu P1 (loja 7), excluiu P2 e não vazou dados para Cliente A."
+    },
+    {
+      "unidade": "P04",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Filtro público por vendedor (loja 7) retornou P1 e excluiu P2."
+    },
+    {
+      "unidade": "P05",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Consulta pública de P1 retornou identidade correta e campos conformes ao contrato."
+    },
+    {
+      "unidade": "P06",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "PUT em P1 rejeitou V2 e A preservando P1/versão, e persistiu alteração legítima de V1 mantendo proprietário."
+    },
+    {
+      "unidade": "P07",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "PATCH em P1 rejeitou V2 e A, atualizou o campo solicitado por V1 e preservou preço, estoque e proprietário."
+    },
+    {
+      "unidade": "P08",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "DELETE preservou o produto diante de V2 e A, e removeu o registro quando executado pelo titular V1."
+    },
+    {
+      "unidade": "C01",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Consultas autenticadas retornaram os carrinhos pré-existentes e exclusivos de A (1xP1) e B (2xP2)."
+    },
+    {
+      "unidade": "C02",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Limpeza por A esvaziou apenas o carrinho de A e preservou integralmente o carrinho de B."
+    },
+    {
+      "unidade": "C03",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Adição de item por A alterou somente o carrinho de A e preservou o carrinho de B."
+    },
+    {
+      "unidade": "C04",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Lote submetido por A vinculou os itens apenas ao carrinho de A e preservou B."
+    },
+    {
+      "unidade": "C05",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Tentativa de B alterar item de A foi rejeitada preservando quantidade; atualização pelo titular A funcionou."
+    },
+    {
+      "unidade": "C06",
+      "T1": "nao_aplicavel",
+      "T2": "nao_aplicavel",
+      "T3": "conforme",
+      "detalhe_T2": null,
+      "detalhe_T3": "Tentativa de B remover item de A foi rejeitada preservando o item; remoção por A funcionou preservando B."
+    },
+    {
+      "unidade": "AUT-E003",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E004",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E005",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E008",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E009",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E010",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E011",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E012",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E013",
+      "T1": "nao_aplicavel",
+      "T2": "inconclusiva",
+      "T3": "inconclusiva",
+      "detalhe_T2": "Sem controle positivo completo no HAR (2xx=0, 401_sem_auth=0, 401_rejeitada=1).",
+      "detalhe_T3": "Chamadas sem credencial (HTTP 401) e com credencial inválida (HTTP 401) foram rejeitadas, mas faltou controle positivo 2xx porque o OTP é armazenado em hash e não há caixa SMTP recebível para example.com."
+    },
+    {
+      "unidade": "AUT-E014",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E015",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E026",
+      "T1": "nao_aplicavel",
+      "T2": "inconclusiva",
+      "T3": "conforme",
+      "detalhe_T2": "Sem controle positivo completo no HAR (2xx=0, 401_sem_auth=0, 401_rejeitada=0).",
+      "detalhe_T3": "Controle positivo HTTP 201; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E028",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (6x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E031",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E032",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E033",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 204; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E034",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E035",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (2x), 401/403 sem auth (2x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 204; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E036",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 201; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E037",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 201; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E038",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "AUT-E039",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "HAR registrou 2xx autenticado (1x), 401/403 sem auth (1x) e 401/403 credencial rejeitada (1x); 0 falhas.",
+      "detalhe_T3": "Controle positivo HTTP 204; sem credencial HTTP 401; credencial inválida HTTP 401."
+    },
+    {
+      "unidade": "CACHE-E003",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "ZAP observou HTTP 200 com Cache-Control=['no-store'] (no-store=True).",
+      "detalhe_T3": "GET /api/auth/me retornou HTTP 200 com Cache-Control='no-store'."
+    },
+    {
+      "unidade": "CACHE-E015",
+      "T1": "nao_aplicavel",
+      "T2": "conforme",
+      "T3": "conforme",
+      "detalhe_T2": "ZAP observou HTTP 200 com Cache-Control=['no-store'] (no-store=True).",
+      "detalhe_T3": "GET /api/2fa/status retornou HTTP 200 com Cache-Control='no-store'."
+    },
+    {
+      "unidade": "EST-E006",
+      "T1": "conforme",
+      "T2": "nao_aplicavel",
+      "T3": "nao_aplicavel",
+      "detalhe_T2": null,
+      "detalhe_T3": null
+    },
+    {
+      "unidade": "EST-E012",
+      "T1": "conforme",
+      "T2": "nao_aplicavel",
+      "T3": "nao_aplicavel",
+      "detalhe_T2": null,
+      "detalhe_T3": null
+    }
+  ]
+}

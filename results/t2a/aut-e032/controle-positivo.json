@@ -1,0 +1,12 @@
+{
+  "unidade": "AUT-E032",
+  "perfil": "V1",
+  "metodo": "PATCH",
+  "rota": "/api/products/27",
+  "status": 200,
+  "produto_id": 27,
+  "loja_id": 7,
+  "data": {
+    "name": "EXP-SEG-01 P1"
+  }
+}
