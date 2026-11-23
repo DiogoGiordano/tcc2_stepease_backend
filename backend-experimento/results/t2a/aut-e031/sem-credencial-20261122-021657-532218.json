@@ -1,8 +1,0 @@
-{
-  "unidade": "AUT-E031",
-  "caso": "requisição sem credencial",
-  "metodo": "PUT",
-  "rota": "/api/products/27",
-  "authorization_presente": false,
-  "status_http": 401
-}

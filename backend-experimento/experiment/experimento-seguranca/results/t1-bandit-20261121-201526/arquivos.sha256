@@ -1,2 +1,0 @@
-e3d338a73fd9f1d00860c30c4d4bfc931040a43d0a98bc4e973c1f8a293fbf1d  backend/app/modules/identity/application/use_cases/request_identity_password_reset.py
-402a280c898beffc4ee8d0f8a1d56298cd2ddb1aa0c4ffd02f5cd5dc9990a302  backend/app/modules/identity/application/use_cases/send_identity_email_two_factor.py
