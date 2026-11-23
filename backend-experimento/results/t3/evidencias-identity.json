@@ -1,0 +1,554 @@
+{
+  "atualizado_em": "2026-11-22T07:54:04.942704+00:00",
+  "total_unidades": 27,
+  "unidades": [
+    {
+      "unidade": "AUT-E003",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "GET /api/auth/me",
+      "data_utc": "2026-11-22T07:53:57.254768+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E004",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/logout",
+      "data_utc": "2026-11-22T07:53:57.261097+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E005",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/change-password",
+      "data_utc": "2026-11-22T07:54:04.942686+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E008",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/enable/google",
+      "data_utc": "2026-11-22T07:53:53.114174+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E009",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/confirm/google",
+      "data_utc": "2026-11-22T07:53:53.122590+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E010",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/verify/google",
+      "data_utc": "2026-11-22T07:53:53.098651+00:00",
+      "perfil": "A (desafio)",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E011",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/enable/email",
+      "data_utc": "2026-11-22T07:53:57.015912+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E012",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/send/email",
+      "data_utc": "2026-11-22T07:53:57.019375+00:00",
+      "perfil": "A (desafio)",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401,
+        "controle_positivo_reaproveitado_de_i11_para_evitar_429": true
+      }
+    },
+    {
+      "unidade": "AUT-E013",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/verify/email",
+      "data_utc": "2026-11-22T07:53:57.022610+00:00",
+      "perfil": "A (desafio)",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "inconclusiva",
+      "justificativa": "Chamadas sem credencial (HTTP 401) e com credencial inválida (HTTP 401) foram rejeitadas, mas faltou controle positivo 2xx porque o OTP é armazenado em hash e não há caixa SMTP recebível para example.com.",
+      "evidencia": {
+        "status_sem_auth": 401,
+        "status_token_invalido": 401,
+        "controle_positivo": "indisponivel (OTP em hash + SMTP sem caixa recebivel)"
+      }
+    },
+    {
+      "unidade": "AUT-E014",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/disable",
+      "data_utc": "2026-11-22T07:53:57.247819+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E015",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "GET /api/2fa/status",
+      "data_utc": "2026-11-22T07:53:57.266002+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "CACHE-E003",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "GET /api/auth/me",
+      "data_utc": "2026-11-22T07:53:52.196713+00:00",
+      "perfil": "A",
+      "regra": "Resposta bem-sucedida contém Cache-Control: no-store",
+      "decisao": "conforme",
+      "justificativa": "GET /api/auth/me retornou HTTP 200 com Cache-Control='no-store'.",
+      "evidencia": {
+        "status": 200,
+        "cache_control": "no-store",
+        "contem_no_store": true
+      }
+    },
+    {
+      "unidade": "CACHE-E015",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "GET /api/2fa/status",
+      "data_utc": "2026-11-22T07:53:52.200176+00:00",
+      "perfil": "A",
+      "regra": "Resposta bem-sucedida contém Cache-Control: no-store",
+      "decisao": "conforme",
+      "justificativa": "GET /api/2fa/status retornou HTTP 200 com Cache-Control='no-store'.",
+      "evidencia": {
+        "status": 200,
+        "cache_control": "no-store",
+        "contem_no_store": true
+      }
+    },
+    {
+      "unidade": "I01",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/login",
+      "data_utc": "2026-11-22T07:53:52.659148+00:00",
+      "perfil": "A, B",
+      "regra": "Login distingue sessão completa e desafio 2FA",
+      "decisao": "conforme",
+      "justificativa": "Login local distinguiu sessão completa (B sem 2FA -> /me 200) de desafio 2FA (A com 2FA -> token de desafio rejeitado em /me com 401/403 e acesso completo concedido somente após verificação).",
+      "evidencia": {
+        "sem_2fa_login_status": 200,
+        "sem_2fa_required": false,
+        "sem_2fa_me_status": 200,
+        "com_2fa_login_status": 200,
+        "com_2fa_required": true,
+        "com_2fa_method": "google",
+        "com_2fa_desafio_presente": true,
+        "desafio_em_me_status": 401,
+        "pos_verificacao_status": 200,
+        "pos_verificacao_me_status": 200
+      }
+    },
+    {
+      "unidade": "I02",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/google",
+      "data_utc": "2026-11-22T07:53:57.416528+00:00",
+      "perfil": "Público",
+      "regra": "Login Google preserva vínculo da conta local e estado de 2FA",
+      "decisao": "inconclusiva",
+      "justificativa": "Token Google inválido foi rejeitado (HTTP 401), mas não há credencial Google OAuth de teste assinada e vinculada a uma conta experimental para validar o fluxo positivo.",
+      "evidencia": {
+        "token_invalido_status": 401,
+        "credencial_google_teste": "indisponivel (sem Google ID Token assinado vinculado a conta local no ambiente experimental)"
+      }
+    },
+    {
+      "unidade": "I03",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "GET /api/auth/me",
+      "data_utc": "2026-11-22T07:53:52.181814+00:00",
+      "perfil": "A, V1",
+      "regra": "Identidade autenticada e campos aninhados conforme IdentityResponse",
+      "decisao": "conforme",
+      "justificativa": "GET /api/auth/me retornou as identidades corretas de A e V1 com campos dentro de IdentityResponse e referências aninhadas restritas apenas a {'id'}.",
+      "evidencia": {
+        "a_status": 200,
+        "v1_status": 200,
+        "a_identidade": {
+          "id": 12,
+          "email": "exp-seg-01-a@example.com",
+          "type": "client",
+          "client_keys": [
+            "id"
+          ],
+          "seller": null,
+          "extras": [],
+          "extras_client": []
+        },
+        "v1_identidade": {
+          "id": 14,
+          "email": "exp-seg-01-v1@example.com",
+          "type": "seller",
+          "seller_keys": [
+            "id"
+          ],
+          "client": null,
+          "extras": [],
+          "extras_seller": []
+        }
+      }
+    },
+    {
+      "unidade": "I04",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/logout",
+      "data_utc": "2026-11-22T07:53:52.208288+00:00",
+      "perfil": "A",
+      "regra": "Logout retorna sucesso e registra evento de auditoria associado à conta",
+      "decisao": "conforme",
+      "justificativa": "Logout de A retornou HTTP 200 e registrou evento de auditoria associado a user_id=12 em activity_logs (política local não exige revogação imediata do JWT).",
+      "evidencia": {
+        "status": 200,
+        "resposta": {
+          "message": "Logout successful"
+        },
+        "novos_eventos_auditoria": [
+          {
+            "id": 25,
+            "user_id": 12,
+            "action": "logout",
+            "details": "Logout realizado"
+          }
+        ]
+      }
+    },
+    {
+      "unidade": "I05",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/change-password",
+      "data_utc": "2026-11-22T07:54:03.024749+00:00",
+      "perfil": "A, B",
+      "regra": "Mudança de senha afeta apenas A e preserva B",
+      "decisao": "conforme",
+      "justificativa": "Mudança de senha de A invalidou a senha anterior, autenticou com a nova senha e preservou integralmente o acesso de B (senha original de A restaurada ao final).",
+      "evidencia": {
+        "change_status": 200,
+        "login_a_senha_antiga_status": 401,
+        "login_a_senha_nova_status": 200,
+        "login_b_preservado_status": 200
+      }
+    },
+    {
+      "unidade": "I06",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/forgot-password",
+      "data_utc": "2026-11-22T07:54:00.986907+00:00",
+      "perfil": "Público",
+      "regra": "Mesma mensagem pública para e-mail cadastrado e ausente + entrega conferida",
+      "decisao": "inconclusiva",
+      "justificativa": "Respostas públicas idênticas (HTTP 200) e registro criado em password_reset_tokens para A (0->1), porém a entrega na caixa de teste não pôde ser conferida (dependência externa SMTP em example.com).",
+      "evidencia": {
+        "cadastrado_status": 200,
+        "ausente_status": 200,
+        "cadastrado_corpo": {
+          "message": "Se o e-mail estiver cadastrado, você receberá instruções para redefinir a senha."
+        },
+        "ausente_corpo": {
+          "message": "Se o e-mail estiver cadastrado, você receberá instruções para redefinir a senha."
+        },
+        "respostas_identicas": true,
+        "tokens_reset_user_a_antes": 0,
+        "tokens_reset_user_a_depois": 1,
+        "caixa_teste_smtp": "indisponivel (dominio sintetico example.com sem Mailpit/sink local)"
+      }
+    },
+    {
+      "unidade": "I07",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/auth/reset-password",
+      "data_utc": "2026-11-22T07:54:00.992807+00:00",
+      "perfil": "Público",
+      "regra": "Redefinição altera senha da conta vinculada e consome autorização",
+      "decisao": "inconclusiva",
+      "justificativa": "Token inválido foi rejeitado (HTTP 401), mas o controle positivo de consumo do token não pôde ser executado porque o banco persiste apenas token_hash e não há caixa SMTP recebível para recuperar o token em texto puro.",
+      "evidencia": {
+        "token_invalido_status": 401,
+        "ultimo_registro_db": {
+          "id": 1,
+          "hash_len": 64,
+          "used_at": null
+        },
+        "caixa_teste_smtp": "indisponivel (token armazenado apenas em hash e sem caixa recebivel para example.com)"
+      }
+    },
+    {
+      "unidade": "I08",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/enable/google + POST /api/2fa/confirm/google",
+      "data_utc": "2026-11-22T07:53:52.227092+00:00",
+      "perfil": "A",
+      "regra": "Transição de configuração e confirmação do autenticador Google",
+      "decisao": "conforme",
+      "justificativa": "Transição E008+E009 validada: 2FA permaneceu inativo antes da confirmação e tornou-se ativo (method='google') somente após confirmação TOTP válida.",
+      "evidencia": {
+        "estado_antes": {
+          "two_factor_enabled": false,
+          "two_factor_method": null
+        },
+        "enable_status": 200,
+        "secret_presente": true,
+        "provisioning_uri_presente": true,
+        "estado_antes_confirmacao": {
+          "two_factor_enabled": false,
+          "two_factor_method": "google"
+        },
+        "confirm_status": 200,
+        "estado_depois_confirmacao": {
+          "two_factor_enabled": true,
+          "two_factor_method": "google"
+        }
+      }
+    },
+    {
+      "unidade": "I09",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/verify/google",
+      "data_utc": "2026-11-22T07:53:52.882344+00:00",
+      "perfil": "A",
+      "regra": "Verificação pelo autenticador conclui sessão da conta do desafio",
+      "decisao": "conforme",
+      "justificativa": "Verificação Google rejeitou código inválido e concluiu sessão completa da conta A com TOTP válido.",
+      "evidencia": {
+        "codigo_invalido_status": 401,
+        "codigo_valido_status": 200,
+        "two_factor_required_final": false,
+        "me_status": 200,
+        "me_user_id": 12
+      }
+    },
+    {
+      "unidade": "I10",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/enable/email",
+      "data_utc": "2026-11-22T07:53:53.143115+00:00",
+      "perfil": "A, B",
+      "regra": "Ativação do método e-mail restrita à própria conta",
+      "decisao": "conforme",
+      "justificativa": "Ativação por A habilitou 2FA com método 'email' apenas na própria conta, preservando B.",
+      "evidencia": {
+        "status": 200,
+        "a_antes": {
+          "two_factor_enabled": false,
+          "two_factor_method": null
+        },
+        "a_depois": {
+          "two_factor_enabled": true,
+          "two_factor_method": "email"
+        },
+        "b_preservado": true
+      }
+    },
+    {
+      "unidade": "I11",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/send/email",
+      "data_utc": "2026-11-22T07:53:56.992569+00:00",
+      "perfil": "A (desafio)",
+      "regra": "Envio de código 2FA ao destinatário previsto",
+      "decisao": "inconclusiva",
+      "justificativa": "Operação retornou HTTP 200 e persistiu hash do OTP (len=64) com expiração no banco, mas a entrega efetiva ao destinatário na caixa de teste não pôde ser conferida (dependência externa SMTP com domínio sintético example.com).",
+      "evidencia": {
+        "status": 200,
+        "resposta": {
+          "success": true
+        },
+        "db_hash_presente": true,
+        "db_hash_len": 64,
+        "db_expiry_presente": true,
+        "caixa_teste_smtp": "indisponivel (dominio sintetico example.com sem Mailpit/sink local)"
+      }
+    },
+    {
+      "unidade": "I12",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/verify/email",
+      "data_utc": "2026-11-22T07:53:57.004112+00:00",
+      "perfil": "A (desafio)",
+      "regra": "Verificação válida do código de e-mail conclui sessão de A",
+      "decisao": "inconclusiva",
+      "justificativa": "Código fictício foi rejeitado (HTTP 401), mas o controle positivo não pôde ser executado porque o OTP é armazenado como hash (len=64) e o ambiente não dispõe de caixa SMTP recebível para example.com.",
+      "evidencia": {
+        "codigo_ficticio_status": 401,
+        "db_hash_len": 64,
+        "caixa_teste_smtp": "indisponivel (OTP armazenado em hash e dominio example.com sem caixa recebivel)"
+      }
+    },
+    {
+      "unidade": "I13",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "POST /api/2fa/disable",
+      "data_utc": "2026-11-22T07:53:57.235851+00:00",
+      "perfil": "A",
+      "regra": "Desativação persiste no banco e libera login direto",
+      "decisao": "conforme",
+      "justificativa": "Desativação persistiu two_factor_enabled=False no banco e o login seguinte retornou sessão completa direta.",
+      "evidencia": {
+        "disable_status": 200,
+        "status_api": {
+          "two_factor_enabled": false,
+          "two_factor_method": null
+        },
+        "db_two_factor_enabled": false,
+        "login_posterior_status": 200,
+        "login_posterior_2fa_required": false
+      }
+    },
+    {
+      "unidade": "I14",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Identity",
+      "operacao": "GET /api/2fa/status",
+      "data_utc": "2026-11-22T07:53:52.190886+00:00",
+      "perfil": "A",
+      "regra": "Estado e método de 2FA conforme User2FASchema sem expor segredos",
+      "decisao": "conforme",
+      "justificativa": "GET /api/2fa/status retornou apenas os campos de User2FASchema sem segredo ou código.",
+      "evidencia": {
+        "status": 200,
+        "campos": [
+          "two_factor_enabled",
+          "two_factor_method"
+        ],
+        "two_factor_enabled": false,
+        "two_factor_method": null,
+        "extras": [],
+        "proibidos": []
+      }
+    }
+  ]
+}

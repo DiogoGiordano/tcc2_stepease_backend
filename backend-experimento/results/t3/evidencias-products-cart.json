@@ -1,0 +1,562 @@
+{
+  "atualizado_em": "2026-11-22T07:29:47.461470+00:00",
+  "total_unidades": 25,
+  "unidades": [
+    {
+      "unidade": "AUT-E026",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "POST /api/products/",
+      "data_utc": "2026-11-22T07:29:46.923465+00:00",
+      "perfil": "V1",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 201; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 201,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E028",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "GET /api/products/me",
+      "data_utc": "2026-11-22T07:29:46.935353+00:00",
+      "perfil": "V1",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E031",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "PUT /api/products/{product_id}",
+      "data_utc": "2026-11-22T07:29:46.951250+00:00",
+      "perfil": "V1",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E032",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "PATCH /api/products/{product_id}",
+      "data_utc": "2026-11-22T07:29:46.965963+00:00",
+      "perfil": "V1",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E033",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "DELETE /api/products/{product_id}",
+      "data_utc": "2026-11-22T07:29:47.361053+00:00",
+      "perfil": "V1",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 204; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 204,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E034",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "GET /api/cart/",
+      "data_utc": "2026-11-22T07:29:47.371825+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E035",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "DELETE /api/cart/",
+      "data_utc": "2026-11-22T07:29:47.461461+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 204; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 204,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E036",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "POST /api/cart/items",
+      "data_utc": "2026-11-22T07:29:47.391368+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 201; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 201,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E037",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "POST /api/cart/items/bulk",
+      "data_utc": "2026-11-22T07:29:47.411342+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 201; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 201,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E038",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "PATCH /api/cart/items/{item_id}",
+      "data_utc": "2026-11-22T07:29:47.427031+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 200; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 200,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "AUT-E039",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "DELETE /api/cart/items/{item_id}",
+      "data_utc": "2026-11-22T07:29:47.444779+00:00",
+      "perfil": "A",
+      "regra": "Operação protegida exige credencial válida",
+      "decisao": "conforme",
+      "justificativa": "Controle positivo HTTP 204; sem credencial HTTP 401; credencial inválida HTTP 401.",
+      "evidencia": {
+        "status_valido": 204,
+        "status_sem_auth": 401,
+        "status_token_invalido": 401
+      }
+    },
+    {
+      "unidade": "C01",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "GET /api/cart/",
+      "data_utc": "2026-11-22T07:29:46.381159+00:00",
+      "perfil": "A, B",
+      "regra": "Consulta retorna apenas o carrinho e itens do titular",
+      "decisao": "conforme",
+      "justificativa": "Consultas autenticadas retornaram os carrinhos pré-existentes e exclusivos de A (1xP1) e B (2xP2).",
+      "evidencia": {
+        "carrinho_ja_existia": true,
+        "cart_a": {
+          "id": 1,
+          "user_id": 12,
+          "itens": [
+            [
+              27,
+              1
+            ]
+          ]
+        },
+        "cart_b": {
+          "id": 2,
+          "user_id": 13,
+          "itens": [
+            [
+              28,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unidade": "C02",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "DELETE /api/cart/",
+      "data_utc": "2026-11-22T07:29:46.530431+00:00",
+      "perfil": "A, B",
+      "regra": "Limpeza restrita ao carrinho do titular",
+      "decisao": "conforme",
+      "justificativa": "Limpeza por A esvaziou apenas o carrinho de A e preservou integralmente o carrinho de B.",
+      "evidencia": {
+        "b_antes": [
+          [
+            28,
+            2
+          ]
+        ],
+        "status": 204,
+        "a_depois": [],
+        "b_depois": [
+          [
+            28,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "unidade": "C03",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "POST /api/cart/items",
+      "data_utc": "2026-11-22T07:29:46.408662+00:00",
+      "perfil": "A, B",
+      "regra": "Adição altera apenas o carrinho do titular",
+      "decisao": "conforme",
+      "justificativa": "Adição de item por A alterou somente o carrinho de A e preservou o carrinho de B.",
+      "evidencia": {
+        "status": 201,
+        "b_antes": [
+          [
+            28,
+            2
+          ]
+        ],
+        "a_depois": [
+          [
+            27,
+            1
+          ],
+          [
+            28,
+            1
+          ]
+        ],
+        "b_depois": [
+          [
+            28,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "unidade": "C04",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "POST /api/cart/items/bulk",
+      "data_utc": "2026-11-22T07:29:46.439164+00:00",
+      "perfil": "A, B",
+      "regra": "Lote vinculado exclusivamente ao carrinho do titular",
+      "decisao": "conforme",
+      "justificativa": "Lote submetido por A vinculou os itens apenas ao carrinho de A e preservou B.",
+      "evidencia": {
+        "status": 201,
+        "b_antes": [
+          [
+            28,
+            2
+          ]
+        ],
+        "a_depois": [
+          [
+            27,
+            1
+          ],
+          [
+            28,
+            1
+          ]
+        ],
+        "b_depois": [
+          [
+            28,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "unidade": "C05",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "PATCH /api/cart/items/{item_id}",
+      "data_utc": "2026-11-22T07:29:46.470605+00:00",
+      "perfil": "A, B",
+      "regra": "Somente o titular altera a quantidade do item",
+      "decisao": "conforme",
+      "justificativa": "Tentativa de B alterar item de A foi rejeitada preservando quantidade; atualização pelo titular A funcionou.",
+      "evidencia": {
+        "item_a_id": 7,
+        "qtd_antes": 1,
+        "b_status": 404,
+        "qtd_apos_b": 1,
+        "a_status": 200,
+        "qtd_apos_a": 2
+      }
+    },
+    {
+      "unidade": "C06",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Cart",
+      "operacao": "DELETE /api/cart/items/{item_id}",
+      "data_utc": "2026-11-22T07:29:46.506988+00:00",
+      "perfil": "A, B",
+      "regra": "Somente o titular remove o item",
+      "decisao": "conforme",
+      "justificativa": "Tentativa de B remover item de A foi rejeitada preservando o item; remoção por A funcionou preservando B.",
+      "evidencia": {
+        "item_a_id": 11,
+        "b_status": 404,
+        "existe_apos_b": true,
+        "a_status": 204,
+        "existe_apos_a": false,
+        "b_preservado": true
+      }
+    },
+    {
+      "unidade": "P01",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "POST /api/products/",
+      "data_utc": "2026-11-22T07:29:45.657123+00:00",
+      "perfil": "V1, A",
+      "regra": "Criação vinculada à loja do vendedor autorizado",
+      "decisao": "conforme",
+      "justificativa": "V1 criou produto vinculado a sellers.id=7 (distinto de users.id=14); Cliente A e vínculo indevido à loja de V2 foram impedidos.",
+      "evidencia": {
+        "v1_propria_loja_status": 201,
+        "v1_criado_id": 30,
+        "v1_persistido_seller_id": 7,
+        "v1_user_id": 14,
+        "cliente_a_status": 403,
+        "v1_loja_v2_status": 403
+      }
+    },
+    {
+      "unidade": "P02",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "GET /api/products/",
+      "data_utc": "2026-11-22T07:29:45.672454+00:00",
+      "perfil": "Público",
+      "regra": "Catálogo público conforme ProductResponse e ProductSellerOut",
+      "decisao": "conforme",
+      "justificativa": "Catálogo público retornou P1 e P2 com todos os campos dentro de ProductResponse e ProductSellerOut.",
+      "evidencia": {
+        "status": 200,
+        "total_retornados": 28,
+        "p1_presente": true,
+        "p2_presente": true,
+        "extras_product": [],
+        "extras_seller": []
+      }
+    },
+    {
+      "unidade": "P03",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "GET /api/products/me",
+      "data_utc": "2026-11-22T07:29:45.685984+00:00",
+      "perfil": "V1, A",
+      "regra": "Consulta de V1 inclui P1 e exclui P2",
+      "decisao": "conforme",
+      "justificativa": "Consulta de V1 incluiu P1 (loja 7), excluiu P2 e não vazou dados para Cliente A.",
+      "evidencia": {
+        "v1_status": 200,
+        "cliente_a_status": 403,
+        "v1_product_ids": [
+          27
+        ],
+        "v1_seller_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "unidade": "P04",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "GET /api/products/seller/{seller_id}",
+      "data_utc": "2026-11-22T07:29:45.690133+00:00",
+      "perfil": "Público",
+      "regra": "Filtro por vendedor retorna P1 e exclui P2",
+      "decisao": "conforme",
+      "justificativa": "Filtro público por vendedor (loja 7) retornou P1 e excluiu P2.",
+      "evidencia": {
+        "status": 200,
+        "seller_id_consultado": 7,
+        "product_ids": [
+          27
+        ],
+        "seller_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "unidade": "P05",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "GET /api/products/{product_id}",
+      "data_utc": "2026-11-22T07:29:45.693427+00:00",
+      "perfil": "Público",
+      "regra": "Identidade de P1 e representação pública prevista",
+      "decisao": "conforme",
+      "justificativa": "Consulta pública de P1 retornou identidade correta e campos conformes ao contrato.",
+      "evidencia": {
+        "status": 200,
+        "product_id": 27,
+        "id_retornado": 27,
+        "seller_id_retornado": 7,
+        "seller_presente": false,
+        "extras_product": [],
+        "extras_seller": []
+      }
+    },
+    {
+      "unidade": "P06",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "PUT /api/products/{product_id}",
+      "data_utc": "2026-11-22T07:29:45.735738+00:00",
+      "perfil": "V1, V2, A",
+      "regra": "Atualização PUT restrita ao vendedor titular",
+      "decisao": "conforme",
+      "justificativa": "PUT em P1 rejeitou V2 e A preservando P1/versão, e persistiu alteração legítima de V1 mantendo proprietário.",
+      "evidencia": {
+        "antes": {
+          "id": 27,
+          "name": "EXP-SEG-01 P1",
+          "seller_id": 7,
+          "price": 100,
+          "stock": 10,
+          "version": 5
+        },
+        "v2_status": 403,
+        "cliente_a_status": 403,
+        "v1_status": 200,
+        "apos_v1": {
+          "id": 27,
+          "name": "EXP-SEG-01 P1 PUT",
+          "seller_id": 7,
+          "price": 100,
+          "stock": 10,
+          "version": 6
+        }
+      }
+    },
+    {
+      "unidade": "P07",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "PATCH /api/products/{product_id}",
+      "data_utc": "2026-11-22T07:29:45.859973+00:00",
+      "perfil": "V1, V2, A",
+      "regra": "Alteração parcial PATCH restrita ao titular preservando demais campos",
+      "decisao": "conforme",
+      "justificativa": "PATCH em P1 rejeitou V2 e A, atualizou o campo solicitado por V1 e preservou preço, estoque e proprietário.",
+      "evidencia": {
+        "antes": {
+          "id": 27,
+          "name": "EXP-SEG-01 P1",
+          "seller_id": 7,
+          "price": 100,
+          "stock": 10,
+          "version": 7
+        },
+        "v2_status": 403,
+        "cliente_a_status": 403,
+        "v1_status": 200,
+        "apos_v1": {
+          "id": 27,
+          "name": "EXP-SEG-01 P1 PATCH",
+          "seller_id": 7,
+          "price": 100,
+          "stock": 10,
+          "version": 8
+        }
+      }
+    },
+    {
+      "unidade": "P08",
+      "tratamento": "T3",
+      "instrumento": "pytest+httpx",
+      "modulo": "Products",
+      "operacao": "DELETE /api/products/{product_id}",
+      "data_utc": "2026-11-22T07:29:46.364853+00:00",
+      "perfil": "V1, V2, A",
+      "regra": "Exclusão restrita ao vendedor titular",
+      "decisao": "conforme",
+      "justificativa": "DELETE preservou o produto diante de V2 e A, e removeu o registro quando executado pelo titular V1.",
+      "evidencia": {
+        "produto_teste_id": 31,
+        "v2_status": 403,
+        "existe_apos_v2": true,
+        "cliente_a_status": 403,
+        "existe_apos_a": true,
+        "v1_status": 204,
+        "existe_apos_v1": false
+      }
+    }
+  ]
+}

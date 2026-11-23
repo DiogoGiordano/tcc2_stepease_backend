@@ -1,0 +1,31 @@
+{
+  "total_mensagens_zap": 6,
+  "capturas": [
+    {
+      "id_zap": "1",
+      "rota": "/api/auth/me",
+      "request_line": "GET http://127.0.0.1:8000/api/auth/me HTTP/1.1",
+      "authorization_presente": true,
+      "status_http": 200,
+      "cache_control": [
+        "no-store"
+      ],
+      "contem_no_store": true,
+      "request_header_sanitizado": "GET http://127.0.0.1:8000/api/auth/me HTTP/1.1\nhost: 127.0.0.1:8000\nuser-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\npragma: no-cache\ncache-control: no-cache\naccept: application/json\ncontent-length: 0\nAuthorization: <REDACTED>\n",
+      "response_header": "HTTP/1.1 200 OK\r\ndate: Sun, 22 Nov 2026 06:28:02 GMT\r\nserver: uvicorn\r\ncontent-length: 214\r\ncontent-type: application/json\r\ncache-control: no-store\r\npragma: no-cache\r\n\r\n"
+    },
+    {
+      "id_zap": "5",
+      "rota": "/api/2fa/status",
+      "request_line": "GET http://127.0.0.1:8000/api/2fa/status HTTP/1.1",
+      "authorization_presente": true,
+      "status_http": 200,
+      "cache_control": [
+        "no-store"
+      ],
+      "contem_no_store": true,
+      "request_header_sanitizado": "GET http://127.0.0.1:8000/api/2fa/status HTTP/1.1\nhost: 127.0.0.1:8000\nuser-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\npragma: no-cache\ncache-control: no-cache\naccept: application/json\ncontent-length: 0\nAuthorization: <REDACTED>\n",
+      "response_header": "HTTP/1.1 200 OK\r\ndate: Sun, 22 Nov 2026 06:28:02 GMT\r\nserver: uvicorn\r\ncontent-length: 53\r\ncontent-type: application/json\r\ncache-control: no-store\r\npragma: no-cache\r\n\r\n"
+    }
+  ]
+}
